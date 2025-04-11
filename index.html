@@ -1,75 +1,19 @@
-<!DOCTYPE HTML>
-<html>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<!doctype html>
+<html lang="en">
+  <head>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://senkanthal.org/favicon/apple-touch-icon.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://senkanthal.org/favicon/favicon-32x32.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://senkanthal.org/favicon/favicon-16x16.webp">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
     <title>Tamil Fonts Converter</title>
-    <link rel="icon" type="image/x-icon" href="web/assets/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="index.html" />
-    <link rel="stylesheet" type="text/css" href="web/css/css_file.css">
-    <script src="web/js/new-jet-engine.min.js"></script>
-    <script src="web/js/trans.min.js"></script>
 
-</head>
-
-<body>
-    <div id="page">
-        <main>
-            <div id="doc-text">
-
-                <div class="top-left-corner">
-                    <a href="https://github.com/senkanthal/Tamil-Fonts-Converter" target="_blank">
-                        <img src="web/assets/github_icon.png" alt="GitHub" title="Visit our GitHub repository">
-                    </a>
-                </div>
-
-                <h1 id="converter-heading">Tamil Font Converter</h1>
-                <select id="alternate-headings">
-                    <option value="Tamil">-converters-</option>
-                    <option value="Anjal">Anjal</option>
-                    <option value="Anjal1">Anjal1</option>
-                    <option value="Bamini">Bamini</option>
-                    <option value="Boomi">Boomi</option>
-                    <option value="Dinakaran">Dinakaran</option>
-                    <option value="Dinamani">Dinamani</option>
-                    <option value="Indoweb">Indoweb</option>
-                    <option value="Koeln">Koeln</option>
-                    <option value="Libi">Libi</option>
-                    <option value="Murasoli">Murasoli</option>
-                    <option value="Mylai">Mylai</option>
-                    <option value="Nakkeeeran">Nakkeeeran</option>
-                    <option value="Oldvikatan">Oldvikatan</option>
-                    <option value="Roman">Roman</option>
-                    <option value="Tab">Tab</option>
-                    <option value="Tam">Tam</option>
-                    <option value="Thanthy">Thanthy</option>
-                    <option value="Tscii">Tscii</option>
-                    <option value="UniBamini">UniBamini</option>
-                    <option value="UniTab">UniTab</option>
-                    <option value="UniTscii">UniTscii</option>
-                    <option value="Webulagam">Webulagam</option>
-                    <option value="Keyman">Keyman</option>
-                    <option value="UniKeyman">UniKeyman</option>
-                    <option value="SenthamizhUni">SenthamizhUni</option>
-                </select>
-                <script src="web/js/change_converters.js"></script>
-                <script src="web/js/html_functions.js"></script>
-                <form>
-                    <textarea id="doc-textarea" placeholder="Write here" class="texta"></textarea>
-                    <textarea id="tmp-text" class="texta"></textarea>
-                    <div class="action-bar">
-                        <div class="inner-control">
-                            <button id="covert" type="button" class="green-btn">Convert</button>
-                            <button type="reset">Clear</button>
-                            <a href="#!" class="btn copy-btn white-btn">Copy Text</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </main>
-    </div>
-</body>
-
-</html>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
