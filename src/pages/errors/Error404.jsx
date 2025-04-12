@@ -5,7 +5,7 @@ function Error404() {
         <div className={style.container}>
             <h1 className={style.heading}>Error 404</h1>
             <h2 className={style.description}>Not Found!</h2>
-            <img src="/images/404.webp" alt="404 Not Found!" className={style.image}></img> 
+            {/*<img src="/images/404.webp" alt="404 Not Found!" className={style.image}></img>*/}
         </div>
     )
 }
