@@ -1,11 +1,13 @@
 import style from "./Home.module.css";
 import { converterDetailsArray } from "../../assets/converterDetails";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [converterDetails, setConverterDetails] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchDetails = async () => {
@@ -50,11 +52,11 @@ function Home() {
           <div
             key={converter.id || converter.converterName}
             className={style.converterCard}
-            onClick={() => window.open(converter.url, "_blank")}
+            onClick={() => navigate(`/font/${converter.converterName}`)}
           >
-            <h3 className={style.converterName}>{converter.name}</h3>
+            <h3 className={style.converterName}>{`${converter.name} Converter`}</h3>
             <p className={style.converterDescription}>
-              {converter.description}
+              {`Convert from/ to ${converter.name} font encoding.`}
             </p>
           </div>
         ))}
