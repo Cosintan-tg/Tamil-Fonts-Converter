@@ -12,6 +12,8 @@ function App() {
           <Route path="/*" element={<Error404 />} />
 
           <Route caseSensitive={false} path="/f/:fontFrom/t/:fontTo" element={<Converter />} />
+          <Route caseSensitive={false} path="/t/:fontTo/f/:fontFrom" element={<Converter />} />
+          <Route caseSensitive={false} path="/:fontFrom/to/:fontTo" element={<Converter />} />
       </Routes>
     </BrowserRouter>
   )

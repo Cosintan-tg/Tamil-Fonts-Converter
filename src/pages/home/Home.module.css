@@ -1,0 +1,212 @@
+/* Home.module.css */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* Universal selector to apply box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Root container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.subHeading {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Converter cards container */
+.converterContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Converter card */
+.converterCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.converterCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.converterName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.converterDescription {
+  font-size: 1rem;
+  color: #718096;
+  line-height: 1.5;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footerText {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin: 0.25rem 0;
+}
+
+.companyLinkFooter {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.companyLinkFooter:hover {
+  color: #2b6cb0;
+  text-decoration: underline;
+}
+
+/* Loading container */
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.loadingText {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4a5568;
+  animation: pulse 1.5s infinite;
+}
+
+/* Error container */
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.errorText {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #e53e3e;
+  text-align: center;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subHeading {
+    font-size: 1.1rem;
+  }
+
+  .converterCard {
+    padding: 1rem;
+  }
+
+  .converterName {
+    font-size: 1.25rem;
+  }
+
+  .converterDescription {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .subHeading {
+    font-size: 1rem;
+  }
+
+  .converterContainer {
+    grid-template-columns: 1fr;
+  }
+}
