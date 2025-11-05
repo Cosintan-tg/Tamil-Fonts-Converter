@@ -1,4 +1,3 @@
-'use client';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ErrorPage from '@/app/pages/errors/ErrorPage';
@@ -10,15 +9,11 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <html>
-      <body>
-        <ErrorPage
-          errorHeading="404 - Page Not Found"
-          errorDescription="This page does not exist."
-        >
-          <Link href="/">Return Home</Link>
-        </ErrorPage>
-      </body>
-    </html>
+    <ErrorPage
+      errorHeading="404 - Page Not Found"
+      errorDescription="This page does not exist."
+    >
+      <Link href="/">Return Home</Link>
+    </ErrorPage>
   );
 }
