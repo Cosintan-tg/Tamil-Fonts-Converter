@@ -82,7 +82,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     title: 'Tamil Fonts Converter',
-    startupImage: 'https://senkanthal.org/favicon/apple-touch-icon.png',
+    startupImage: '/favicon/apple-touch-icon.png',
     statusBarStyle: 'default',
   },
 
@@ -90,98 +90,98 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: 'https://senkanthal.org/favicon.ico' },
+      { url: '/favicon.ico' },
       {
-        url: 'https://senkanthal.org/favicon/favicon-16x16.png',
+        url: '/favicon/favicon-16x16.png',
         sizes: '16x16',
         type: 'image/png',
       },
       {
-        url: 'https://senkanthal.org/favicon/favicon-32x32.png',
+        url: '/favicon/favicon-32x32.png',
         sizes: '32x32',
         type: 'image/png',
       },
       {
-        url: 'https://senkanthal.org/favicon/favicon-42x42.png',
+        url: '/favicon/favicon-42x42.png',
         sizes: '42x42',
         type: 'image/png',
       },
       {
-        url: 'https://senkanthal.org/favicon/favicon-48x48.png',
+        url: '/favicon/favicon-48x48.png',
         sizes: '48x48',
         type: 'image/png',
       },
       {
-        url: 'https://senkanthal.org/favicon/favicon-16x16.webp',
+        url: '/favicon/favicon-16x16.webp',
         sizes: '16x16',
         type: 'image/webp',
       },
       {
-        url: 'https://senkanthal.org/favicon/favicon-32x32.webp',
+        url: '/favicon/favicon-32x32.webp',
         sizes: '32x32',
         type: 'image/webp',
       },
       {
-        url: 'https://senkanthal.org/favicon/favicon-42x42.webp',
+        url: '/favicon/favicon-42x42.webp',
         sizes: '42x42',
         type: 'image/webp',
       },
       {
-        url: 'https://senkanthal.org/favicon/favicon-48x48.webp',
+        url: '/favicon/favicon-48x48.webp',
         sizes: '48x48',
         type: 'image/webp',
       },
     ],
     apple: [
       {
-        url: 'https://senkanthal.org/favicon/apple-touch-icon-57x57.png',
+        url: '/favicon/apple-touch-icon-57x57.png',
         sizes: '57x57',
       },
       {
-        url: 'https://senkanthal.org/favicon/apple-touch-icon-60x60.png',
+        url: '/favicon/apple-touch-icon-60x60.png',
         sizes: '60x60',
       },
       {
-        url: 'https://senkanthal.org/favicon/android-chrome-72x72.png',
+        url: '/favicon/android-chrome-72x72.png',
         sizes: '72x72',
       },
       {
-        url: 'https://senkanthal.org/favicon/apple-touch-icon-76x76.png',
+        url: '/favicon/apple-touch-icon-76x76.png',
         sizes: '76x76',
       },
       {
-        url: 'https://senkanthal.org/favicon/apple-touch-icon-114x114.png',
+        url: '/favicon/apple-touch-icon-114x114.png',
         sizes: '114x114',
       },
       {
-        url: 'https://senkanthal.org/favicon/apple-touch-icon-120x120.png',
+        url: '/favicon/apple-touch-icon-120x120.png',
         sizes: '120x120',
       },
       {
-        url: 'https://senkanthal.org/favicon/android-chrome-144x144.png',
+        url: '/favicon/android-chrome-144x144.png',
         sizes: '144x144',
       },
       {
-        url: 'https://senkanthal.org/favicon/apple-touch-icon-152x152.png',
+        url: '/favicon/apple-touch-icon-152x152.png',
         sizes: '152x152',
       },
       {
-        url: 'https://senkanthal.org/favicon/apple-touch-icon-167x167.png',
+        url: '/favicon/apple-touch-icon-167x167.png',
         sizes: '167x167',
       },
       {
-        url: 'https://senkanthal.org/favicon/apple-touch-icon-180x180.png',
+        url: '/favicon/apple-touch-icon-180x180.png',
         sizes: '180x180',
       },
       {
-        url: 'https://senkanthal.org/favicon/apple-touch-icon-1024x1024.png',
+        url: '/favicon/apple-touch-icon-1024x1024.png',
         sizes: '1024x1024',
       },
     ],
     other: [
       {
         rel: 'mask-icon',
-        url: 'https://senkanthal.org/favicon/logo-symbol-icon.svg',
+        url: '/favicon/logo-symbol-icon.svg',
         color: '#6364FF',
       },
       { rel: 'manifest', url: '/favicon/site.webmanifest' },

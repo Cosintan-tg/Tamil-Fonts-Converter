@@ -12,47 +12,47 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: '#f5f7fa',
     icons: [
       {
-        src: 'https://senkanthal.org/favicon/android-chrome-72x72.webp',
+        src: '/favicon/android-chrome-72x72.webp',
         sizes: '72x72',
         type: 'image/webp',
       },
       {
-        src: 'https://senkanthal.org/favicon/android-chrome-144x144.webp',
+        src: '/favicon/android-chrome-144x144.webp',
         sizes: '144x144',
         type: 'image/webp',
       },
       {
-        src: 'https://senkanthal.org/favicon/android-chrome-192x192.webp',
+        src: '/favicon/android-chrome-192x192.webp',
         sizes: '192x192',
         type: 'image/webp',
       },
       {
-        src: 'https://senkanthal.org/favicon/android-chrome-512x512.webp',
+        src: '/favicon/android-chrome-512x512.webp',
         sizes: '512x512',
         type: 'image/webp',
       },
       {
-        src: 'https://senkanthal.org/favicon/android-chrome-72x72.png',
+        src: '/favicon/android-chrome-72x72.png',
         sizes: '72x72',
         type: 'image/png',
       },
       {
-        src: 'https://senkanthal.org/favicon/android-chrome-144x144.png',
+        src: '/favicon/android-chrome-144x144.png',
         sizes: '144x144',
         type: 'image/png',
       },
       {
-        src: 'https://senkanthal.org/favicon/android-chrome-192x192.png',
+        src: '/favicon/android-chrome-192x192.png',
         sizes: '192x192',
         type: 'image/png',
       },
       {
-        src: 'https://senkanthal.org/favicon/android-chrome-512x512.png',
+        src: '/favicon/android-chrome-512x512.png',
         sizes: '512x512',
         type: 'image/png',
       },
       {
-        src: 'https://senkanthal.org/favicon/logo-symbol-icon.svg',
+        src: '/favicon/logo-symbol-icon.svg',
         type: 'image/svg+xml',
       },
     ],

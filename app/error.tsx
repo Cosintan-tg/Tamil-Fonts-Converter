@@ -9,15 +9,11 @@ export default function Error({
   reset: () => void;
 }) {
   return (
-    <html>
-      <body>
-        <ErrorPage
-          errorHeading="500 – Something went wrong"
-          errorDescription={error.message}
-        >
-          <button onClick={() => reset()}>Try again</button>
-        </ErrorPage>
-      </body>
-    </html>
+    <ErrorPage
+      errorHeading="500 – Something went wrong"
+      errorDescription={error.message}
+    >
+      <button onClick={() => reset()}>Try again</button>
+    </ErrorPage>
   );
 }
