@@ -201,24 +201,24 @@ export default function Converter({
 
         <div className={styles.textareaWrapper}>
           <textarea
+            name="textInput"
             className={styles.input}
             style={{
               fontFamily:
-                fontFamilyMap[
-                  selectedFontFrom.toLowerCase() as keyof typeof fontFamilyMap
-                ] || '"Inter", sans-serif',
+                fontFamilyMap[selectedFontTo as keyof typeof fontFamilyMap] ||
+                'Baloo Thambi 2, sans-serif',
             }}
             placeholder="இங்கே உரையை உள்ளிடவும்..."
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
           <textarea
+            name="textOutput"
             className={styles.output}
             style={{
               fontFamily:
-                fontFamilyMap[
-                  selectedFontTo.toLowerCase() as keyof typeof fontFamilyMap
-                ] || '"Inter", sans-serif',
+                fontFamilyMap[selectedFontTo as keyof typeof fontFamilyMap] ||
+                'Baloo Thambi 2, sans-serif',
             }}
             placeholder="மாற்றப்பட்ட உரை இங்கே தோன்றும்..."
             value={convertedText}

@@ -52,45 +52,109 @@
 }
 
 .fontSelectorWrapper {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 0.5rem;
-  width: fit-content;
-  justify-content: start;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .fontSelector {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex: 1;
+  min-width: 200px;
 }
 
 .fontLabel {
-  font-size: 1rem;
-  font-weight: 550;
-  color: #1a1a1a;
-  width: 40px;
+  width: 50px;
   text-align: right;
-  flex-direction: initial;
+  flex-shrink: 0;
+  color: #1a1a1a;
+  font-weight: bold;
 }
 
 .fontDropdown {
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  background: #ffffff;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-  width: 100px;
-  text-align: left;
+  flex: 1;
+  min-width: 120px;
+  font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .fontSelectorWrapper {
+    flex-direction: column;
+  }
+
+  .fontSelector {
+    width: 100%;
+  }
+
+  .fontLabel {
+    width: auto;
+    text-align: left;
+  }
+
+  .fontDropdown {
+    width: 100%;
+    font-weight: bold;
+  }
+}
+
+.fontDropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  position: relative;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='%23999' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+}
+
+.fontDropdown:hover,
 .fontDropdown:focus {
-  outline: none;
   border-color: #3182ce;
-  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+  outline: none;
+}
+
+.fontDropdown option {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.fontDropdown::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.fontDropdown::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.fontDropdown::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 4px;
+}
+
+.fontDropdown::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+.fontDropdown {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #f0f0f0;
 }
 
 .buttonWrapper {
@@ -205,6 +269,7 @@
   min-height: 200px;
   padding: 1rem;
   font-size: 1rem;
+  color: #1a1a1a;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   background: #ffffff;
