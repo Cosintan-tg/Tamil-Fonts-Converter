@@ -7,7 +7,7 @@
         "next": "16.0.1",
         "react": "19.2.0",
         "react-dom": "19.2.0",
-        "tamil-language-tools-and-assets": "1.0.3",
+        "tamil-language-tools-and-assets": "1.0.5",
       },
       "devDependencies": {
         "@types/node": "^24.10.0",
@@ -714,7 +714,7 @@
 
     "supports-preserve-symlinks-flag": ["supports-preserve-symlinks-flag@1.0.0", "", {}, "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=="],
 
-    "tamil-language-tools-and-assets": ["tamil-language-tools-and-assets@1.0.3", "", {}, "sha512-D0era7u5Bk/CISg1U4uTTkqa1LgO1Jd9HkHKwXHrhNI+YIMGFOlOlkKr8pSs8WcMb3Oi+K8IiUXt45ZCtEcmXg=="],
+    "tamil-language-tools-and-assets": ["tamil-language-tools-and-assets@1.0.5", "", {}, "sha512-y1+S7pnu8r26A4qzDvw9VIq83W2R9juzVVYsbWa1uTC/aSWJAdhGEegjGku8fWb2snRCwGH6nCJw9eN2AOQZ9Q=="],
 
     "tinyglobby": ["tinyglobby@0.2.15", "", { "dependencies": { "fdir": "^6.5.0", "picomatch": "^4.0.3" } }, "sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ=="],
 
